@@ -1,38 +1,24 @@
-# devops-terraform-assignment
-Terraform, AWS IAM, EC2, remote state and least-privilege policy assignments
-# DevOps Terraform Assignment
+# DevOps Assignment
 
-## Overview
+This repository contains Terraform-based AWS assignments.
 
-This repository contains my hands-on AWS and Terraform assignment work.
+## Task 1: EC2 Infrastructure
+- Provision multiple EC2 instances using Terraform.
+- Configure instance parameters, tags, and outputs.
 
-## Tasks
+## Task 2: Remote State and Locking
+- Configure an S3 backend for Terraform remote state.
+- Configure DynamoDB state locking.
 
-### Task 1 — EC2 Infrastructure
-Terraform configuration for provisioning EC2 instances using reusable variables, outputs, and lifecycle protection.
+## Task 3: IAM and Cross-Account Access
+- Configure IAM users, groups, and roles.
+- Set up cross-account role assumption.
 
-### Task 2 — Remote State and Locking
-S3 remote state backend configuration, S3 versioning and encryption, and DynamoDB-based state locking.
+## Task 4: Least-Privilege CI Policy
+- Configure permissions to push Docker images to Amazon ECR.
+- Allow deployment updates to a specific ECS service.
+- Provide read-only access to a specific S3 bucket.
 
-### Task 3 — Multi-Account IAM and Cross-Account Access
-IAM groups, users, role permissions, and cross-account role assumption configuration examples.
-
-### Task 4 — Least-Privilege IAM Policy
-A custom IAM policy for ECR image publishing, ECS deployment, and read-only S3 build artifact access.
-
-## Security
-
-- Sensitive values, AWS credentials, and Terraform state files are excluded from version control.
-- Example configuration values should be replaced with appropriate values in the deployment environment.
-- AWS resources and permissions should be validated before deployment.
-
-## Tools
-
-- Terraform
-- AWS IAM
-- Amazon EC2
-- Amazon S3
-- Amazon DynamoDB
-- Amazon ECR
-- Amazon ECS
-- Git and GitHub
+## Security Notes
+- Do not commit AWS credentials, secrets, Terraform state files, or sensitive `.tfvars` files.
+- Replace example account IDs and resource names with actual values before applying Terraform.

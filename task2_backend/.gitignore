@@ -1,0 +1,21 @@
+
+# Terraform downloaded providers and working directories
+**/.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Variable files that may contain secrets
+*.tfvars
+*.auto.tfvars
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Local credentials and environment files
+.aws/
+.env
+.env.*

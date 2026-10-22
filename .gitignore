@@ -1,0 +1,20 @@
+# Terraform provider binaries and working directories
+**/.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Sensitive variable files
+*.tfvars
+*.auto.tfvars
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Local credentials
+.aws/
+.env
+.env.*
